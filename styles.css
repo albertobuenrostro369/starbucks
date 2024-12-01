@@ -1,148 +1,112 @@
+
 /* General */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+body{
+  display: flex;
+  flex-direction: column;
+
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;  
 }
 
-header {
-  background-color: white;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ddd;
+nav img{
+  width: 5vw;
+}
+
+header{
+  top: 0;
+  background: white;
+  z-index: 10;
+  width: 100vw;
 }
 
 /* Navbar */
-.navbar {
+.navbar{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.navbar .logo {
-  width: 50px;
+
+.navbar-left{
+  display: flex;
+  flex-direction: row;
+  margin-right: 30vw;
 }
 
-.nav-left ul, 
-.nav-right ul {
+ul{
+  display: flex;
+  flex-direction: row;
   list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
 }
 
-.nav-left li, 
-.nav-right li {
-  margin: 0 10px;
-}
-
-.nav-left a, 
-.nav-right a {
-  text-decoration: none;
+a{
   color: black;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  margin: 20px;
 }
 
-.nav-left a:hover, 
-.nav-right a:hover {
-  color: #007BFF;
-}
+.container{
+  width: 68vw;
+  height: auto;
+  margin-bottom: 30px;
 
-.nav-right .btn-join {
-  background-color: black;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-right .btn-join:hover {
-  background-color: #007BFF;
-  color: white;
-}
-
-/* Sección Latte */
-.section-latte {
   display: flex;
-  align-items: center;
-  background-color: #0E6251;
+  flex-direction: row;
+
   color: white;
-  padding: 40px 20px;
-  flex-wrap: wrap; /* Para mejor manejo en pantallas pequeñas */
 }
 
-.section-latte .text-content {
-  flex: 1;
-  padding-right: 20px;
-  min-width: 300px; /* Asegura buena visualización en pantallas pequeñas */
+.container img{
+  width: 36vw;
+  height: auto;
 }
 
-.section-latte .text-content h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.section-latte .text-content p {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-.section-latte img {
-  width: 300px;
-  border-radius: 10px;
-  flex-shrink: 0; /* Asegura que la imagen no reduzca su tamaño */
-}
-
-/* Sección Temporada */
-.section-season {
-  background-color: #007BFF;
-  color: white;
-  padding: 40px 20px;
+.container-starbucks{
+  padding: 8%;
   text-align: center;
+  font-size: 19px;
 }
 
-.section-season h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+#container-green{
+  background-color: #1e3932;
 }
 
-.section-season p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+#container-red{
+  background-color: #d50032;
 }
 
-.section-season img {
-  width: 90%;
-  max-width: 600px;
-  border-radius: 10px;
+#container-blue{
+  background-color: #0044b4;
+  flex-direction: row;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap; /* Navegación ajustable en pantallas pequeñas */
-  }
 
-  .nav-left ul, 
-  .nav-right ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+/*Rewards Styles*/
+.rewards-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  height: calc(100vh - 50px);
+}
 
-  .section-latte {
-    flex-direction: column; /* Cambia el diseño a vertical */
-    text-align: center;
-  }
+/* Mitad izquierda */
+.left-container{
+  position: fixed;
+  top: 1;
 
-  .section-latte .text-content {
-    padding-right: 0;
-    margin-bottom: 20px;
-  }
+  width: 40vw;
+  height: 100vh;
+  background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);
+  color: white;
+  margin: 0;
+  padding: 50px;
+}
 
-  .section-latte img {
-    margin: 0 auto;
-  }
+.right-container{
+  width: 50vw;
+  margin-left: 49vw;
+  width: calc(100vw - 25vw); /* Ocupa el espacio restante */
+  overflow-y: auto; /* Habilita el scroll vertical */
 }
