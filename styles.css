@@ -26,6 +26,7 @@ header{
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px;
+  align-items: center; /* Centra verticalmente los elementos */
 }
 
 
@@ -33,6 +34,8 @@ header{
   display: flex;
   flex-direction: row;
   margin-right: 30vw;
+  align-items: center;
+  justify-content: center;
 }
 
 ul{
@@ -77,36 +80,16 @@ a{
   background-color: #d50032;
 }
 
+#container-green2{
+  background-color: #1e3932;
+
+}
+
+#container-red2{
+  background-color: #d50032;
+}
+
 #container-blue{
   background-color: #0044b4;
   flex-direction: row;
-}
-
-
-/*Rewards Styles*/
-.rewards-container{
-  display: flex;
-  flex-direction: row;
-  margin-top: 70px;
-  height: calc(100vh - 50px);
-}
-
-/* Mitad izquierda */
-.left-container{
-  position: fixed;
-  top: 1;
-
-  width: 40vw;
-  height: 100vh;
-  background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);
-  color: white;
-  margin: 0;
-  padding: 50px;
-}
-
-.right-container{
-  width: 50vw;
-  margin-left: 49vw;
-  width: calc(100vw - 25vw); /* Ocupa el espacio restante */
-  overflow-y: auto; /* Habilita el scroll vertical */
 }
