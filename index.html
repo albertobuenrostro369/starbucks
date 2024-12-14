@@ -1,79 +1,269 @@
 <!DOCTYPE html>
-<html lang="es">
+<!-- Define el tipo de documento como HTML5 -->
+<html lang="en">
+<!-- Establece el idioma del documento a inglés -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://1000marcas.net/wp-content/uploads/2019/12/Starbucks-logo.jpg"> 
-  <link rel="stylesheet" href="styles.css">
-  <title>Home | Starbucks</title>
-  
-  <header>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Permite que la página sea responsiva y se ajuste al ancho del dispositivo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Vincula un archivo CSS externo para los estilos principales -->
+    <link rel="stylesheet" href="styles-media.css">
+    <!-- Vincula un archivo CSS adicional para los estilos específicos de dispositivos -->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png">
+    <!-- Agrega un ícono para el navegador -->
+    <title>Homepage │ Starbucks</title>
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+</head>
+
+<header class="no-media-query">
+    <!-- Header principal visible en dispositivos sin media queries -->
+    <navbar class="navbar">
+        <!-- Define un contenedor de navegación -->
+        <nav class="navbar-left">
+            <!-- Contiene elementos de navegación alineados a la izquierda -->
+            <a href="index.html">
+                <!-- Enlace al logo que redirige a la página principal -->
+                <img id="logo" src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks-Logo">
+                <!-- Imagen del logo con un identificador único -->
+            </a>
+            <ul>
+                <!-- Lista de enlaces principales -->
+                <li><a id="menu-click" href="menu.html">Menu</a></li>
+                <!-- Enlace al menú -->
+                <li><a href="rewards.html" target="_blank">Rewards</a></li>
+                <!-- Enlace a las recompensas que se abre en una nueva pestaña -->
+            </ul>
+        </nav>
+        <nav class="navbar-right">
+            <!-- Contiene elementos de navegación alineados a la derecha -->
+            <ul>
+                <li>
+                    <a href="https://www.starbucks.com.mx/stores">
+                        <img id="zone" 
+                            src="https://cdn.icon-icons.com/icons2/622/PNG/512/facebook-placeholder-for-locate-places-on-maps_icon-icons.com_57151.png" alt="ubicacion">
+                        <!-- Imagen de ícono de ubicación -->
+                    </a>
+                </li>
+                <li><a href="https://www.starbucks.com.mx/stores">Localizar tienda</a></li>
+                <!-- Enlace para localizar tiendas -->
+                <button class="white-button-ingresar">
+                    <!-- Botón para ingresar con estilo personalizado -->
+                    <li><a href="ingresar.html">Ingresar</a></li>
+                </button>
+                <button class="black-button-unete">
+                    <!-- Botón para unirse con estilo personalizado -->
+                    <li><a id="black-button-unete-text" href="unete.html">Únete</a></li>
+                </button>
+            </ul>
+        </nav>
+    </navbar>
+</header>
+
+<header class="media-query">
+    <!-- Header optimizado para dispositivos con media queries -->
+    <navbar class="navbar-media-query">
+        <nav class="navbar-left">
+            <a href="index.html"><img id="logo" src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks-Logo"></a>
+        </nav>
+        <nav class="navbar-right">
+            <img src="https://t4.ftcdn.net/jpg/06/48/55/83/360_F_648558329_yZ9Xl05H3QqApOpUevzsYkCnI5tWUfgD.jpg" alt="three-lines">
+            <!-- Ícono de menú hamburguesa para dispositivos móviles -->
+        </nav>
+    </navbar>
+</header>
+
+<header class="media-query-tablet">
+    <!-- Header optimizado para dispositivos tipo tablet -->
     <navbar class="navbar">
         <nav class="navbar-left">
-            <img src="https://1000marcas.net/wp-content/uploads/2019/12/Starbucks-logo.jpg" alt="">
+            <a href="index.html"><img id="logo" src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1017px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks-Logo"></a>
             <ul>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Rewards</a></li>
+                <li><a id="menu-click" href="menu.html">Menu</a></li>
+                <li><a href="rewards.html" target="_blank">Rewards</a></li>
             </ul>
         </nav>
         <nav class="navbar-right">
             <ul>
-                <li><a href="">Localizar Tienda</a></li>
-                <li><a href="">Ingresar</a></li>
-                <li><a href="">Unete</a></li>
+                <li><a href="https://www.starbucks.com.mx/stores"><img id="zone" 
+                    src="https://cdn.icon-icons.com/icons2/622/PNG/512/facebook-placeholder-for-locate-places-on-maps_icon-icons.com_57151.png" alt="ubicacion"></a></li>
+                <li><a href="https://www.starbucks.com.mx/stores">Localizar tienda</a></li>
+                <button class="white-button-ingresar">
+                    <li><a href="https://rewards.starbucks.mx/login">Ingresar</a></li>
+                </button>
+                <button class="black-button-unete">
+                    <li><a id="black-button-unete-text" href="https://rewards.starbucks.mx/register">Únete</a></li>
+                </button>
             </ul>
         </nav>
-    </nav>
+    </navbar>
 </header>
+<body>
 
-    <!-- Sección 1 -->
-    <section class="container" id="container-green">
-      <a href="https://www.starbucks.com.mx/" target="_blank"><img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2F2024-10_SB_Latte.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2" alt="Barista"></a>
+  <section class="container" id="container-green">
+      <img id="individual-img" alt="Starbucks-latte"
+          src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2F2024-10_SB_Latte.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2">
       <section class="container-starbucks">
-        <h2>STARBUCKS LATTE POR TI</h2>
-        <p>Por nuestro amor al café, a nuestros partners y a nuestros clientes.</p>
-        <p>¡Estamos felices de verte todos los días!</p>
+          <h2>STARBUCKS LATTE POR TI</h2>
+          <p>
+              Por nuestro amor al café, a nuestros partners y a <br> nuestros clientes.
+          </p>
+          <p>
+              ¡Estamos felices de verte todos los dias!
+          </p>
       </section>
-    </section>
-
-    <!-- Sección 2 -->
-    <section class="container" id="container-blue">
-      <a href="https://www.starbucks.com.mx/" target="_blank"><img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FHOLIDAY_2024-Spooky.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2" alt="5 latte"></a>
-      <section class="container-starbucks">
-        <h2>CELEBREMOS CON LOS FAVORITOS DE LA TEMPORADA</h2>
-        <p>¡Disfruta esta temporada con el regreso de Cranberry Mocha Blanco acompañados de Toffee Nut Latte, Red Velvet Latte, Hazelnut Caramel Latte y Holiday Cinnamon!</p>
-      </section>
-    </section>
-
-<!-- Sección 3 -->
-<section class="container" id="container-red">
-  <a href="https://www.starbucks.com.mx/" target="_blank">
-    <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FMerch.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2" alt="cafe bolsa roja">
-  </a>
-  <section class="container-starbucks">
-    <h2>EL CAFÉ PERFECTO PARA ESTA TEMPORADA</h2>
-    <p>Una taza de café preparada con Christmas Blend es la excusa perfecta para disfrutar con tus seres queridos..</p>
-    <p>#StarbucksLatte</p>
-  </section>
-</section>
-
-    <!-- Sección 4 -->
-  <section class="container" id="container-green2">
-      <a href="https://www.starbucks.com.mx/" target="_blank"><img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2Fstarbucks_rewards.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max" alt="Starbucks telefono"></a>
-      <section class="container-starbucks">
-        <h2>RECOMPENSAS EN TU BEBIDA FAVORITA</h2>
-        <p>Sé parte de Starbucks Rewards y obtén más café gratis, promociones exclusivas, accesos a productos
-          antes que nadie y más.</p>
-      </section>
-    </section>
   </section>
 
-    <!-- Sección 5 -->
-    <section class="container" id="container-red2">
-      <a href="https://www.starbucks.com.mx/" target="_blank"><img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2F2024-10_HOLIDAY_2024_Apple%20(1).png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max" alt="3 starbucks"></a>
+  <section class="container" id="container-blue">
+      <img id="individual-img" alt="cafes-temporada"
+          src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FHOLIDAY_2024-Spooky.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2">
+      <section class="container-starbucks">
+          <h2>
+              CELEBREMOS CON LOS FAVORITOS <br> DE LA TEMPORADA 
+          </h2>
+          <p>
+              ¡Disfruta esta temporada con el regreso de Cranberry Mocha <br>
+              Blanco acompañados de Toffee Nut latte, Red Velvet Latte, <br>
+              Hazelnut Caramel latte y Holiday Cinnamon!
+          </p>
+      </section>
+  </section>
+
+  <section class="container" id="container-red">
+      <img id="individual-img" alt="cafe-rojo"
+          src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FMerch.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2">
+      <section class="container-starbucks">
+          <h2>EL CAFÉ PERFECTO <br> PARA ESTA TEMPORADA</h2>
+          <p>
+              Una taza de café preparada con Christmas Blend es la excusa <br> perfecta para disfrutar con tus seres queridos.
+          </p>
+          <p>
+              #StarbucksLatte
+          </p>
+      </section>
+  </section>
+
+  <section class="container" id="container-green-reverse">
+      <img id="individual-img" alt="Starbucks-rewards"
+          src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2Fstarbucks_rewards.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2">
+      <section class="container-starbucks">
+          <h2>
+              RECOMPENSAS EN <br> TU BEBIDA FAVORITA
+          </h2>
+          <p>
+              Sé parte de Starbucks Rewards y obtén más café gratis, <br>
+              promociones exclusivas, accesos a productos <br>
+              antes que nadie y más.
+          </p>
+      </section>
+  </section>
+
+  <section class="container" id="container-red">
+      <img id="individual-img" alt="Starbucks-vasos" 
+          src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2F2024-10_HOLIDAY_2024_Apple%20(1).png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2">
       <section class="container-starbucks">
           <h2>TODO Y TODOS POR EL PLANETA</h2>
-          <p>Trae tu vaso o termo favorito y obtén $8 de descuento en tu bebida</p>    
+          <p>
+              Trae tu vaso o termo favorito y obtén $8 de descuento <br>
+              en tu bebida
+          </p>
+          <p>
+              <button id="button-conoce">
+                  <a id="black-button-unete-text" href="https://www.starbucks.com.mx/articulo/todo-y-todos-por-el-planeta-0">Conoce más</a>
+              </button>
+          </p>
       </section>
+  </section>
+
+  <section class="container">
+      <section class="container-couple" id="container-couple-red">
+          <img id="couple-img-red" alt="noticias-starbucks"
+              src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FNoticias.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2">
+          <p>Consulta los eventos más <br> recientes.</p>
+          <p>
+              <button id="button-aqui">
+                  <a id="button-aqui-text" href="https://www.starbucks.com.mx/articulo/todo-y-todos-por-el-planeta-0">Aquí</a>
+              </button>
+          </p>
+      </section>
+      <section class="container-couple" id="container-couple-blue">
+          <img id="couple-img-blue" alt="noticias-starbucks" 
+              src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FTC.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2">
+          <p>Términos y <br> condiciones.</p>
+          <p>
+              <button id="button-vermas">
+                  <a id="button-vermas-text" href="https://www.starbucks.com.mx/articulo/todo-y-todos-por-el-planeta-0">Ver mas</a>
+              </button>
+          </p>
+      </section>
+  </section>
+
+<footer class="no-media-query">
+
+  <section class="about-us">
+      <section>
+          <h3>Sobre nosotros</h3>
+          <a href="https://www.starbucks.com.mx/seccion/trabaja-con-nosotros">Trabaja con nosotros</a>
+          <br> <br>
+          <a href="https://historias.starbucks.com/es/" target="_blank">Sobre nosotros</a>
+      </section>
+      <section class="client-attention">
+          <h3>Atencion al cliente</h3>
+          <a href="https://rewards.starbucks.mx/atencion-cliente">Contáctanos</a>
+          <br> <br>
+          <a href="https://alsea.interfactura.com/RegistroDocumento.aspx?opc=Starbucks">Facturas Electrónicas</a>
+          <br> <br>
+          <a href="https://www.starbucks.com.mx/seccion/experiencia-starbucks">Formas de comprar</a>
+      </section>
+  </section>
+
+  <section class="social-media">
+      <a href="https://www.facebook.com/StarbucksMexico"><img alt="Facebook-logo" 
+          src="https://static.vecteezy.com/system/resources/previews/022/257/063/non_2x/icon-media-social-facebook-free-vector.jpg"></a>
+      <a href="https://www.instagram.com/starbucksMex/"><img alt="Instagram-logo" 
+          src="https://cdn-icons-png.freepik.com/512/1384/1384015.png"></a>
+      <a href="https://x.com/StarbucksMex"><img alt="X-logo" 
+          src="https://images.freeimages.com/image/large-previews/f35/x-twitter-logo-on-black-circle-5694247.png"></a>
+      <a href="https://www.youtube.com/user/StarbucksMexico?app=desktop"><img alt="Youtube-logo" 
+          src="https://cdn.vectorstock.com/i/1000v/01/46/black-youtube-logo-on-a-transparent-background-vector-46200146.jpg"></a>
+  </section>
+  <section class="others">
+      <ul>
+          <li><a href="https://www.starbucks.com.mx/articulo/accesibilidad-web">Accesibilidad web</a></li>
+          <li>|</li>
+          <li><a href="https://www.starbucks.com.mx/articulo/aviso-de-privacidad">Aviso de privacidad</a></li>
+          <li>|</li>
+          <li><a href="https://www.starbucks.com.mx/seccion/boletines">Boletines</a></li>
+          <li>|</li>
+          <li><a href="https://www.starbucks.com.mx/articulo/condiciones-de-uso-1">Condiciones de uso</a></li>
+          <li>|</li>
+          <li><a href="https://www.starbucks.com.mx/articulo/mapa-del-sitio">Mapa del sitio</a></li>
+          <li>|</li>
+          <li><a href="https://www.starbucks.com.mx/articulo/preferencias-sobre-cookie">Preferencias sobre cookies</a></li>
+      </ul>
+  </section>
+  <section class="reserved-rights">
+      <p>Ⓒ 2024. Starbucks Cofee Company. Reservados todos los derechos <br>
+          mx | prod | 5efee83dd153c6a598a78f0bf36e131f98ed3eba | 04/11/2024-05:34:23:403</p>
+  </section>
+
+</footer>
+
+<footer class="media-query">
+
+  <section class="about-us">
+      <section>
+          <h3>Sobre nosotros</h3>
+      </section>
+      <section class="client-attention">
+          <h3>Atencion al cliente</h3>
+      </section>
+  </section>
+  
+</footer>
+
+
 </body>
 </html>
