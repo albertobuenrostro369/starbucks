@@ -1,0 +1,177 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 768px)
+{
+    * 
+    {
+        margin: 0px;
+        padding: 0%;
+        width: 100%;
+    }
+
+    .no-media-query
+    {
+        display: none;
+    }
+
+    .media-query
+    {
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .navbar-media-query
+    {
+        margin: 0px;
+        margin-bottom: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0%;
+    }
+
+    .navbar-left
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar-left img
+    {
+        margin-left: 2vw;
+    }
+
+    .navbar-right
+    {
+        width: 100%;
+        margin-left: 0vw;
+    }
+
+    .navbar-right img
+    {
+        width: 5vw;
+        margin-left: 32vw;
+    }
+
+    .menu
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        margin-left: 5vw;
+    }
+
+    #texto-disfrutalos
+    {
+        margin: 0;
+    }
+
+    .menu h2, .menu p
+    {
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    .menu h3
+    {
+        border-top: solid;
+        border-bottom: solid;
+        padding: 1.5%;
+        margin-bottom: 1vh;
+        border-color: gray;
+        width: 100%;
+        border-width: 1px;
+    }
+
+    .bebidas
+    {
+        margin: 0;
+        margin-left: 10vw;
+        display: grid;
+        grid-template-columns: repeat(2, 0.1fr);
+    }
+
+    .bebidas-imagenes img
+    {
+        width: 20vw;
+    }
+
+    .alimentosYCafe
+    {
+        margin: 0;
+        margin-left: -30vw;
+        margin-top: 2vh;
+    }
+
+    .alimentosYCafe img
+    {
+        width: 20vw;
+    }
+
+    .menu p
+    {
+        font-weight: bold;
+        font-size: 2vw;
+    }
+
+    .about-us
+    {
+        margin: 5vw 0vw 0vw 10vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .client-attention
+    {
+        margin: 0;
+        margin-top: 5vw;
+    }
+
+    .social-media
+    {
+        margin: 0;
+        margin: 3vh 0vh 3vh 0vh;
+    }
+
+    .social-media a
+    {
+        width: 20%;;
+    }
+
+    .others
+    {
+        width: 100%;
+    }
+
+    .others ul 
+    {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .others li
+    {
+        margin: 0;
+        justify-content: left;
+        text-align: right;
+        margin-bottom: 1vh;
+    }
+
+    .reserved-rights
+    {
+        margin: 0;
+        margin-top: 3vh;
+    }
+
+    .reserved-rights p
+    {
+        font-size: 12px;
+        text-align: left;
+    }
+}

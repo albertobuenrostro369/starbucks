@@ -1,0 +1,354 @@
+/*MENU*/
+
+.menu
+{
+    width: 80vw;
+}
+
+.menu h3
+{
+    border-top: solid;
+    border-bottom: solid;
+    padding: 1.5%;
+    border-color: gray;
+    border-width: 1px;
+}
+
+.menu h2
+{
+    font-weight: 800;
+    font-size: 28px;
+    margin-left: 1.3vw;
+    margin-bottom: 6vh;
+}
+
+.menu p
+{
+   font-weight: bold;
+   font-size: large;
+}
+
+#texto-disfrutalos
+{
+    margin-bottom: -3vh;
+    margin-left: 1.5vw;
+}
+
+.menu img
+{
+    background-color: #1e3932;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 0.6vw;
+    border-color: #1e3932;
+    width: 11vw;
+}
+
+.menu img:hover
+{
+    border-style: solid;
+    border-width: 0.6vw;
+    border-color: #a4cdc2;
+}
+
+.bebidas
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: flex-start;
+    column-gap: 15vw;
+    margin-left: 9vw;
+}
+
+.bebidas-imagenes
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.alimentosYCafe
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-right: 50vw;
+}
+
+.alimentosYCafe-imagenes
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us
+{
+    margin-top: 8vh;
+}
+
+.others li
+{
+    color: gray;
+}
+
+
+/*INGRESAR /INICIAR SESION */
+
+#ingresa-cuenta
+{
+    padding-top: 12%;
+    font-weight: bolder;
+}
+
+.black-banner
+{
+    margin-left: -7vw;
+    width: 57vw;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+.formulary
+{
+    background: #f1f0eb;
+    margin-left: -122px;
+    width: 58vw;
+    padding: 10vh;
+}
+
+form
+{
+    justify-content: center;
+    align-items: center;
+    margin-left: 10vw;
+}
+
+form ul
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5vh;
+    justify-content: center;
+}
+
+li
+{
+    display: flex;
+    flex-direction: column;
+}
+
+label
+{
+    color: gray;
+    font-weight: 600;
+    font-size: 0.9vw;
+}
+
+::placeholder
+{
+    color: gray;
+    font-weight: 900;
+    font-size: 1vw;
+}
+
+input
+{
+    background-color: #f1f0eb;
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.form-buttons
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.forgot-password
+{
+    background: none;
+    border: none;
+    width: 11vw;
+    color: #136d4e;
+    font-weight: 600;
+    margin-right: 13vw;
+}
+
+.forgot-password:hover
+{
+    background-color: #136d4d29;
+    color: #17855f;
+}
+
+.form-buttons img
+{
+    width: 20vw;
+    margin-right: 5vw;
+}
+
+.login
+{
+    background-color: #00a862;
+    border: none;
+    width: 13vw;
+    height: 8vh;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+    margin-left: 10vw;
+}
+
+.join-rewards
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15vh;
+}
+
+.join-rewards h2
+{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#descarga-app
+{
+    font-weight: 500;
+    justify-content: center;
+    width: 30vw;
+    text-align: left;
+    margin-left: 5vw;
+}
+
+.join-rewards-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-join-now
+{
+    background: none;
+    border: solid 1px #008248;
+    color: #008248;
+    width: 11vw;
+    height: 8vh;
+    font-weight: 600;
+    font-size: large;
+    margin-right: 2vw;
+}
+
+.button-join-now:hover
+{
+    background-color: #00824816;
+}
+
+.button-join-now a
+{
+    color: #008248;
+}
+
+.join-rewards-img img
+{
+    width: 16vw;
+}
+
+/*INGRESAR /INICIAR SESION */
+
+.black-banner-unete
+{
+    margin-left: -7vw;
+    width: 57vw;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 10vh;
+}
+
+.day-month
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.day-month input
+{
+    width: 5vw;
+}
+
+.gray
+{
+    color: gray;
+    font-size: 1vw;
+    margin: 1vh 0 1vh 0;
+}
+
+.bold
+{
+    font-weight: bold;
+    font-size: 1.1vw;
+    margin: 1vh 0 1vh 0;
+}
+
+#little
+{
+    font-size: 0.8vw;
+}
+
+.options-circle
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.options-circle button
+{
+    background: none;
+    border-radius: 100%;
+    border: gainsboro solid;
+    width: 1.5vw;
+    height: 3.8vh;
+    margin-right: 0.5vw;
+}
+
+.options-circle button:hover
+{
+    background-color: #008000;
+}
+
+.options-square
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.options-square button
+{
+    background: none;
+    border-radius: 25%;
+    border: gray solid;
+    width: 1.5vw;
+    height: 3.8vh;
+    margin-right: 0.5vw;
+}
+
+.options-square button:hover
+{
+    background-color: #008000;
+}
