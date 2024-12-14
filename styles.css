@@ -1,95 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* General */
-body{
-  display: flex;
-  flex-direction: column;
-
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;  
+* 
+{
+    box-sizing: border-box;
 }
 
-nav img{
-  width: 5vw;
+body
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Noto Sans", sans-serif;
 }
 
-header{
-  top: 0;
-  background: white;
-  z-index: 10;
-  width: 100vw;
+/*barra navegacion*/
+
+.media-query
+{
+    display: none;
 }
 
-/* Navbar */
-.navbar{
-  display: flex;
-  flex-direction: row;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  align-items: center; /* Centra verticalmente los elementos */
+.media-query-tablet
+{
+    display: none;
 }
 
-
-.navbar-left{
-  display: flex;
-  flex-direction: row;
-  margin-right: 30vw;
-  align-items: center;
-  justify-content: center;
+#logo 
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
 }
 
-ul{
-  display: flex;
-  flex-direction: row;
-  list-style: none;
+#zone
+{
+    width: 20px;
+    height: 20px;
 }
 
-a{
-  color: black;
-  text-decoration: none;
-  margin: 20px;
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 700;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}   
+
+.navbar-left
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 520px;
 }
 
-.container{
-  width: 68vw;
-  height: auto;
-  margin-bottom: 30px;
-
-  display: flex;
-  flex-direction: row;
-
-  color: white;
+#menu-click
+{
+    margin-right: 40px;
 }
 
-.container img{
-  width: 36vw;
-  height: auto;
+ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
 }
 
-.container-starbucks{
-  padding: 8%;
-  text-align: center;
-  font-size: 19px;
+a
+{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
 }
 
-#container-green{
-  background-color: #1e3932;
+a:hover
+{
+    color: #1e3932;
 }
 
-#container-red{
-  background-color: #d50032;
+/*imagenes con texto*/
+
+.container
+{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 30px;
 }
 
-#container-green2{
-  background-color: #1e3932;
+#individual-img
+{
+    width: 45.5vw;
+    height: auto;
+}
+
+.container-starbucks
+{
+    text-align: center;
+    font-size: 19px;
+    padding: 5%;
+}
+
+#container-green
+{
+    background-color: #1e3932;    
+}
+
+#container-green-reverse
+{
+    background-color: #1e3932;
+    flex-direction: row-reverse; 
+}
+
+#container-red
+{
+    background-color: #d50032;
+}
+
+#container-blue
+{
+    background-color: #0044b4;
+    flex-direction: row-reverse;
+}
+
+.container-couple
+{
+    text-align: center;
+    font-size: 19px; 
+    margin-right: 2vw;
+}
+
+#container-couple-red
+{
+    color: #d50032;
+    background: #f6bfd9;
+}
+
+#container-couple-blue
+{
+    color: #144e5d;
+    background: #98cde4;
+}
+
+#couple-img-red
+{
+    width: 44vw;
+    height: auto;
+}
+
+#couple-img-blue
+{
+    width: 44vw;
+    height: auto;
+}
+
+/*BOTONES*/
+
+button
+{
+    border-radius: 50px;
+    border: 1;
+}
+
+.white-button-ingresar
+{
+    background-color: white;
+    border-color: black;
+    width: 6vw;
+    height: 4vh;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.white-button-ingresar:hover
+{
+    background-color: rgba(255, 255, 255, 0.592);
+}
+
+.black-button-unete
+{
+    background-color: black;
+    width: 5vw;
+    height: 4vh;
+    margin: auto;
+}
+
+.black-button-unete:hover
+{
+    background-color: rgba(0, 0, 0, 0.79);
+}
+
+#black-button-unete-text
+{
+    color: white;
+}
+
+#button-conoce
+{
+    background-color: #d50032;
+    color: white;
+    border-color: white;
+    width: 7vw;
+    height: 5vh;
+    margin: auto;
+}
+
+#button-conoce:hover
+{
+    background-color: #ca3659;
+}
+
+#button-aqui
+{
+    background-color: #f6bfd9;
+    border-color: #d50032;
+    width: 4vw;
+    height: 4vh;
+}
+
+#button-aqui-text
+{
+    color: #d50032;
+}
+
+#button-vermas
+{
+    background-color: #98cde4;
+    border-color: #144e5d;
+    width: 6vw;
+    height: 4.5vh;
+}
+
+#button-vermas-text
+{
+    color: #144e5d;
+}
+
+/*FOOTER*/
+
+.about-us
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 55vw;
+    margin-top: 2vh;
+    margin-bottom: 12vh;
+}
+
+.about-us a
+{
+    font-weight: 500;
+    color: gray;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.about-us h3
+{
+    font-weight: 400;
+}
+
+.client-attention
+{
+    margin-left: 3vw;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+footer p
+{
+    color: black;
+}
+
+.social-media
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 22vw;
+    margin-bottom: 4vh;
+}
+
+.social-media img
+{
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.others ul li
+{
+    font-weight: normal;
+    text-align: center;
+    padding-right: 1vw;
+}
+
+.others a
+{
+    font-weight: 300;
+    color: gray;
+}
+
+.reserved-rights p
+{
+    font-weight: 300;
+    text-align: center;
+    color: gray;
+    font-size: 13px;
+}
+
+/* PAGINA REWARDS */
+
+/* navbar */
+
+.header-rewards
+{
+    position: fixed;
+    background: white;
+    top: 0px;
+    z-index: 10;
+    padding: 0px 240px 0px 240px;
+}
+
+#navbar-left-rewards
+{
+    margin-top: 10px;
+    margin-right: 330px;
+}
+
+#navbar-right-rewards
+{
+    margin-top: 10px;
+    margin-left: 120px;
+    width: 550px;
+}
+
+#white-button-iniciarSesion
+{
+    width: 7.5vw;
+    height: 5vh;
+}
+
+#black-button-uneteAhora
+{
+    width: 7.5vw;
+    height: 5vh;
+    margin-left: -10px;
+}
+
+#LocalizaTuTienda
+{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#logo-rewards
+{
+    width: 50px;
+    height: 50px;
+    margin-right: -10px;
+}
+
+#menu-click-rewards
+{
+    margin-right: 30px;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+#zone-rewards
+{
+    width: 14px;
+    height: 20px;
+}
+
+.rewards-container
+{
+    display: flex;
+    margin-top: 80px;
+    height: calc(100vh- 50px);
+}
+
+/* left-side */
+
+.left-container
+{
+    position: fixed;
+    width: 43vw;
+    height: 90vh;
+    background: linear-gradient(0deg, rgb(29,57,50) 0%, rgb(10,105,75) 100%);
+    color: white;
+    margin: 0;
+    padding-top: 180px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.left-container img
+{
+    width: 300px;
+    margin-bottom: -20px;
 
 }
 
-#container-red2{
-  background-color: #d50032;
+#white-button-Unete 
+{
+    background-color: white;
+    border-color: black;
+    width: 7vw;
+    height: 5vh;
+    margin-left: 50px;
 }
 
-#container-blue{
-  background-color: #0044b4;
-  flex-direction: row;
+#green-button-iniciar
+{
+    background: #184538;
+    border-color: white;
+    width: 7vw;
+    height: 5vh;
+}
+
+#green-button-iniciar:hover
+{
+    border-color: #13946f;
+    color: #13946f;
+}
+
+#green-button-iniciar-text
+{
+    color: white;
+}
+
+#green-button-iniciar-text:hover
+{
+    color: #13946f;
+}
+
+.hand-rewards
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 400px;
+}
+
+/* left-side */
+
+.right-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-left: 50vw;
+    padding-top: 18px;
+    padding-right: 10vw;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.negritas
+{
+    font-weight: bold;
+}
+
+.join-rewards
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.join-rewards h2
+{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.join-rewards-images
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#benefits
+{
+    width: 10vw;
+    height: auto;
+}
+
+div
+{
+    margin-bottom: 80px;
+}
+
+.stars-rewards
+{
+    display: flex;
+    flex-direction: column;   
+    background: #f1f0eb;
+    margin-left: -122px;
+    width: 58vw;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#stars
+{
+    width: 30vw;
+    height: auto;
+}
+
+.app-download
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.app-download-imgs
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#step1
+{
+    margin-left: -300px;
+    width: 8vw;
+    height: 20vh;
+}
+
+#step2
+{
+    margin-left: -350px;
+    width: 15vw;
+    height: 30vh;
+}
+
+#step3
+{
+    margin-left: -250px;
+    width: 8vw;
+    height: 20vh;
+}
+
+#chica-starbucks
+{
+    width: 18vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 350px;
+    bottom: 380px;
+}
+
+.youtube-video
+{
+    margin-left: -123px;
+    width: 59vw; 
+    height: 100vh;
+    margin-top: -200px;
+}
+
+iframe
+{
+    width: 58vw; 
+    height: 100vh;
+}
+
+.order-and-pay
+{
+    display: flex;
+    flex-direction: column;
+    background: #f1f0eb;
+    width: 60vw;
+    margin-left: -122px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-and-pay h2
+{
+    font-size: 20px;
+}
+
+.order-and-pay-wrap
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-and-pay-imgs
+{
+    display: flex;
+    align-items: center;
+    width: 260px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.order-and-pay-card
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+}
+
+#order-and-pay-stars
+{
+    width: 3vw;
+    height: 5vh;
+}
+
+#order-and-pay-qrs
+{
+    width: 5vw;
+    height: 18vh;
+    margin-left: -50px;
+    margin-right: 15px;
+}
+
+#order-and-pay-card
+{
+    width: 25vw;
+    height: 20vh;
+}
+
+.starbucks-app
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.starbucks-app img
+{
+    width: 20vw;
+    height: 30vh;
+}
+
+.play-app-store
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.play-app-store img
+{
+    display: flex;
+    margin: 25px;
+    width: 10vw;
+    height: 7vh;
+}
+
+.conoce-mas
+{
+    background: #f1f0eb;
+    display: flex;
+    flex-direction: row;
+    margin-left: -122px;
+    width: 58vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 16px;
+}
+
+.conoce-mas img
+{
+    width: 25vw;
+    height: 25vh;
+}
+
+.conoce-mas-text a
+{
+    color: #156f4f;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/* Footer Rewards */
+
+#about-us-rewards
+{
+    text-align: left;
+    font-size: 16px;
+    margin: -5vh 0vw 15vh -90px;
+}
+
+#social-media-rewards
+{
+    margin-left: 10vw;
+    margin-bottom: 0vh;
+}
+
+#others-rewards ul
+{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -80px;
+    font-size: 16px;
+}
+
+#others-rewards li
+{
+    margin-left: 4px;
+    border-right: 1px solid;
+    border-color: gray;
+    padding-right: 10px;
+}
+
+#reserved-rights-rewards
+{
+    padding-bottom: 50px;
+}
+
+#reserved-rights-rewards p
+{
+    font-size: 12px;
 }
